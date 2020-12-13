@@ -1,0 +1,13 @@
+[package]
+name = "remtiski"
+version = "0.1.0"
+authors = ["Volker Mische <volker.mische@gmail.com>"]
+edition = "2018"
+description = "Rendering tiny-skia output on a reMarkable."
+repository = "https://github.com/vmx/remtiski"
+license = "MIT OR Apache-2.0"
+keywords = ["remarkable", "framebuffer", "2d"]
+
+[dependencies]
+libremarkable = "0.4.1"
+tiny-skia = { git = "https://github.com/RazrFalcon/tiny-skia", features = ["png-format"] }

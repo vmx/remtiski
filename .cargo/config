@@ -1,0 +1,10 @@
+[target.armv7-unknown-linux-gnueabihf]
+linker = "/home/vmx/src/misc/remarkable/poky/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc"
+rustflags = [
+  "-C", "link-arg=-march=armv7-a",
+  "-C", "link-arg=-marm",
+  "-C", "link-arg=-mfpu=neon",
+  "-C", "link-arg=-mfloat-abi=hard",
+  "-C", "link-arg=-mcpu=cortex-a9",
+  "-C", "link-arg=--sysroot=/home/vmx/src/misc/remarkable/poky/sysroots/cortexa9hf-neon-poky-linux-gnueabi"
+]
